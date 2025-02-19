@@ -56,20 +56,65 @@ function CalcularOperaciones(){
               document.getElementById("Descuento").value="No descuento";
               let total=subtotal;
               document.getElementById("Total").value=total;
-            }else if (subtotal>=1000.00 && subtotal <=4999.99) {
+        }else if (subtotal>=1000.00 && subtotal <=4999.99) {
             
                 Swal.fire({
                     icon: "success",
-                    title: "Aplica 20% de Descuento",
+                    title: "Aplica 10% de Descuento",
                     draggable: true
 
                   });
 
             document.getElementById("Subtotal").value= subtotal;
-            let descuento=(subtotal*0.20);
+            let descuento=(subtotal*0.10);
             document.getElementById("Descuento").value=descuento;
             let total=(subtotal- descuento);
             document.getElementById("Total").value=total;
-        }
+
+    }else if (subtotal>=5000.00 && subtotal <=8999.99) {
+            
+            Swal.fire({
+                icon: "success",
+                title: "Aplica 20% de Descuento",
+                draggable: true
+
+              });
+
+        document.getElementById("Subtotal").value= subtotal;
+        let descuento=(subtotal*0.20);
+        document.getElementById("Descuento").value=descuento;
+        let total=(subtotal- descuento);
+        document.getElementById("Total").value=total;
+
+    }else if (subtotal>=9000.00 && subtotal <=12999.99) {
+            
+                Swal.fire({
+                    icon: "success",
+                    title: "Aplica 30% de Descuento",
+                    draggable: true
+
+                  });
+
+            document.getElementById("Subtotal").value= subtotal;
+            let descuento=(subtotal*0.30);
+            document.getElementById("Descuento").value=descuento;
+            let total=(subtotal- descuento);
+            document.getElementById("Total").value=total;
+        
+    }else if (subtotal>=13000.00 ) {
+            
+            Swal.fire({
+                icon: "success",
+                title: "Aplica 40% de Descuento",
+                draggable: true
+
+              });
+
+        document.getElementById("Subtotal").value= subtotal;
+        let descuento=(subtotal*0.40);
+        document.getElementById("Descuento").value=descuento;
+        let total=(subtotal- descuento);
+        document.getElementById("Total").value=total;
+    }
     
 }}
