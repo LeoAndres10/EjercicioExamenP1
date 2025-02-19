@@ -67,7 +67,7 @@ function CalcularOperaciones(){
 
             document.getElementById("Subtotal").value= subtotal;
             let descuento=(subtotal*0.10);
-            document.getElementById("Descuento").value=descuento;
+            document.getElementById("Descuento").value= `descuento 10%  ${descuento}`;
             let total=(subtotal- descuento);
             document.getElementById("Total").value=total;
 
@@ -82,7 +82,7 @@ function CalcularOperaciones(){
 
         document.getElementById("Subtotal").value= subtotal;
         let descuento=(subtotal*0.20);
-        document.getElementById("Descuento").value=descuento;
+        document.getElementById("Descuento").value=`descuento 20%  ${descuento}`;
         let total=(subtotal- descuento);
         document.getElementById("Total").value=total;
 
@@ -97,7 +97,7 @@ function CalcularOperaciones(){
 
             document.getElementById("Subtotal").value= subtotal;
             let descuento=(subtotal*0.30);
-            document.getElementById("Descuento").value=descuento;
+            document.getElementById("Descuento").value=`descuento 30%  ${descuento}`;
             let total=(subtotal- descuento);
             document.getElementById("Total").value=total;
         
@@ -112,7 +112,7 @@ function CalcularOperaciones(){
 
         document.getElementById("Subtotal").value= subtotal;
         let descuento=(subtotal*0.40);
-        document.getElementById("Descuento").value=descuento;
+        document.getElementById("Descuento").value=`descuento 40%  ${descuento}`;
         let total=(subtotal- descuento);
         document.getElementById("Total").value=total;
     }
