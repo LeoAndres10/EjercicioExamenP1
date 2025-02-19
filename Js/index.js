@@ -117,4 +117,23 @@ function CalcularOperaciones(){
         document.getElementById("Total").value=total;
     }
     
-}}
+    
+}
+
+}
+
+function limpiar(){
+    
+        document.getElementById("Producto1").value= "";
+        document.getElementById("Producto2").value= "";
+        document.getElementById("Producto3").value= "";
+        document.getElementById("Producto4").value= "";
+        document.getElementById("Producto5").value= "";
+
+
+        document.getElementById("Subtotal").value= "";
+       
+        document.getElementById("Descuento").value= "";
+       
+        document.getElementById("Total").value= "";
+}
