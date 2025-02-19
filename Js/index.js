@@ -1,9 +1,12 @@
+document.getElementById("Descuento").value="NO DESCUENTO";
+
 function CalcularOperaciones(){
     let producto1= document.getElementById("Producto1").value;
     let producto2= document.getElementById("Producto2").value;
     let producto3= document.getElementById("Producto3").value;
     let producto4= document.getElementById("Producto4").value;
     let producto5= document.getElementById("Producto5").value;
+    
 
     if (producto1 === "") {
         Swal.fire({
@@ -45,7 +48,7 @@ function CalcularOperaciones(){
         let p5=parseInt(producto5);
 
         let subtotal= (p1+p2+p3+p4+p5);
-
+    
         if (subtotal >= 0 && subtotal <=999.99) {
             Swal.fire({
                 icon: "error",
@@ -53,7 +56,7 @@ function CalcularOperaciones(){
               
               });
               document.getElementById("Subtotal").value= subtotal;
-              document.getElementById("Descuento").value="No descuento";
+              document.getElementById("Descuento").value="NO DESCUENTO";
               let total=subtotal;
               document.getElementById("Total").value=total;
         }else if (subtotal>=1000.00 && subtotal <=4999.99) {
@@ -66,8 +69,8 @@ function CalcularOperaciones(){
                   });
 
             document.getElementById("Subtotal").value= subtotal;
-            let descuento=(subtotal*0.10);
-            document.getElementById("Descuento").value= `descuento 10%  ${descuento}`;
+           let descuento=(subtotal*0.10);
+            document.getElementById("Descuento").value= `descuento 10%: ${descuento}`;
             let total=(subtotal- descuento);
             document.getElementById("Total").value=total;
 
@@ -81,8 +84,8 @@ function CalcularOperaciones(){
               });
 
         document.getElementById("Subtotal").value= subtotal;
-        let descuento=(subtotal*0.20);
-        document.getElementById("Descuento").value=`descuento 20%  ${descuento}`;
+         let descuento=(subtotal*0.20);
+        document.getElementById("Descuento").value=`descuento 20%:  ${descuento}`;
         let total=(subtotal- descuento);
         document.getElementById("Total").value=total;
 
@@ -96,8 +99,8 @@ function CalcularOperaciones(){
                   });
 
             document.getElementById("Subtotal").value= subtotal;
-            let descuento=(subtotal*0.30);
-            document.getElementById("Descuento").value=`descuento 30%  ${descuento}`;
+           let descuento=(subtotal*0.30);
+            document.getElementById("Descuento").value=`descuento 30%:  ${descuento}`;
             let total=(subtotal- descuento);
             document.getElementById("Total").value=total;
         
@@ -112,7 +115,7 @@ function CalcularOperaciones(){
 
         document.getElementById("Subtotal").value= subtotal;
         let descuento=(subtotal*0.40);
-        document.getElementById("Descuento").value=`descuento 40%  ${descuento}`;
+        document.getElementById("Descuento").value=`descuento 40%:  ${descuento}`;
         let total=(subtotal- descuento);
         document.getElementById("Total").value=total;
     }
