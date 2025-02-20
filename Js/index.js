@@ -41,11 +41,11 @@ function CalcularOperaciones(){
               });
             
         }else{
-        let p1=parseInt(producto1);
-        let p2=parseInt(producto2);
-        let p3=parseInt(producto3);
-        let p4=parseInt(producto4);
-        let p5=parseInt(producto5);
+        let p1=parseFloat(producto1);
+        let p2=parseFloat(producto2);
+        let p3=parseFloat(producto3);
+        let p4=parseFloat(producto4);
+        let p5=parseFloat(producto5);
 
         let subtotal= (p1+p2+p3+p4+p5);
     
